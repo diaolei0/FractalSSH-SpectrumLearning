@@ -1,0 +1,40 @@
+Fractal SSH v12 最终消融实验运行说明
+====================================
+
+把下面两个 Python 文件复制到项目的 02_ai_v12 文件夹：
+1. RUN_V12_ABLATIONS_FINAL_LOCKED.py
+2. summarize_v12_ablation_FINAL_LOCKED.py
+
+项目结构应为：
+Fractal_SSH_COMPLETE_FROM_SCRATCH_R1\
+  02_ai_v12\
+  work\
+    database_v7\
+    run_v12\
+      operator_cache\
+    final_9class\
+    vicsek_experiment_bridge\
+
+本脚本不会重新训练 E；E 直接使用 work\run_v12。
+只训练 A、B、C、D、F、G，输出到 work\ablation_v12。
+
+第一步：先做 dry-run，不训练：
+python RUN_V12_ABLATIONS_FINAL_LOCKED.py --dry-run
+
+看到 “DRY RUN PASSED” 后再正式运行：
+python RUN_V12_ABLATIONS_FINAL_LOCKED.py
+
+如果你原来正式训练 E 使用的是特定 Python 环境，请用同一个 python.exe 启动上面的脚本。
+脚本内部所有子进程都会使用启动它的同一个 sys.executable。
+
+如果运行中断，需要继续同一批实验：
+python RUN_V12_ABLATIONS_FINAL_LOCKED.py --resume
+
+不要对其他旧的 80-epoch screening 目录使用 --resume；正式消融建议使用干净的 work\ablation_v12。
+
+最终自动生成：
+work\ablation_v12\ablation_A_to_G_best_projector_compact.csv
+work\ablation_v12\ablation_A_to_G_best_projector_full.csv
+work\ablation_v12\ablation_A_to_G_all_checkpoints.csv
+
+其中 compact.csv 是后续写主文 4.3 Ablation Study 最重要的文件。

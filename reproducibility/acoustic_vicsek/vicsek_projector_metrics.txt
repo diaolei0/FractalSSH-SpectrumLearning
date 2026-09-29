@@ -1,0 +1,5 @@
+V22 standard G(2) Vicsek projector metrics
+========================================================================
+projector score MAE (all 9) = 0.02081308521
+projector score MAE (shared 6) = 0.03093504688
+absent BULK-L/BULK-0/BULK-U leakage fraction = 0.001707485616

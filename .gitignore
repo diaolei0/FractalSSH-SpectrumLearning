@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data and training outputs
+work/
+**/run_*/
+**/operator_cache/
+**/states/
+**/masks/
+*.pt
+*.pth
+*.ckpt
+*.log
+
+# Local path configuration
+02_ai_v12/DATABASE_PATH.local.txt
+
+# Archives and temporary files
+*.zip
+*.rar
+*.7z
+*.tmp
+*.bak

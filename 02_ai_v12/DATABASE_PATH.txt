@@ -1,0 +1,6 @@
+# Optional database path.
+# Leave this file with comments only if the database is discoverable automatically.
+# Otherwise add one absolute path on a new line, for example:
+# /path/to/fractal_ssh_topological_database_b3_b7_canonical_v7
+#
+# Alternatively set the environment variable V7_DB.

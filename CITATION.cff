@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the software repository and the associated paper."
+title: "FractalSSH-SpectrumLearning"
+type: software
+authors:
+  - family-names: "Diao"
+    given-names: "Lei"
+license: MIT
+abstract: "Physics-constrained operator-enhanced multiscale convolution-Transformer code for variable-length full-spectrum prediction in 2D fractal SSH systems with acoustic validation."

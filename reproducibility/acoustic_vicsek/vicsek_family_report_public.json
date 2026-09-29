@@ -1,0 +1,65 @@
+{
+  "family_id": "b3_F0001_N05",
+  "mask_path": "work/database_v7/masks/b3_F0001_N05.npz",
+  "geometry_match": [
+    [
+      "M",
+      "generator"
+    ],
+    [
+      "G2",
+      "G2"
+    ]
+  ],
+  "split": {
+    "split": "test",
+    "source": "reproducibility/model_run/split_manifest.csv"
+  },
+  "prediction_npz": "work/run_v12/test_predictions_best_projector/b3_F0001_N05_prediction.npz",
+  "prediction_keys": {
+    "true_E": "true_E",
+    "pred_E": "pred_E",
+    "true_C": "true_scores",
+    "pred_C": "pred_scores",
+    "ref_dims": "ref_dims",
+    "all_keys": [
+      "true_E",
+      "pred_E",
+      "true_scores",
+      "pred_scores",
+      "legacy_hard",
+      "cluster_id",
+      "deg",
+      "ref_dims"
+    ],
+    "shapes": {
+      "true_E": [
+        100
+      ],
+      "pred_E": [
+        100
+      ],
+      "true_scores": [
+        100,
+        9
+      ],
+      "pred_scores": [
+        100,
+        9
+      ],
+      "legacy_hard": [
+        100
+      ],
+      "cluster_id": [
+        100
+      ],
+      "deg": [
+        100
+      ],
+      "ref_dims": [
+        9
+      ]
+    }
+  },
+  "_public_release_note": "Local absolute paths were replaced by repository-relative paths; family identity, split, keys, and shapes are unchanged."
+}

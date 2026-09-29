@@ -1,0 +1,21 @@
+Fractal SSH v12 PAPER — OPERATOR HIERARCHY / INTERFERENCE-AWARE
+Version: v12-paper-operator-hierarchy-2026-09-13-r1
+
+Main entry:
+  RUN_THIS_OPERATOR_AI_v12.py
+
+Default run directory:
+  run_full_spectrum_operator_v12_OPERATOR_HIERARCHY
+
+Default physics/model:
+  K1 + K2 + K3 + Keff3
+  eta2/path/order hierarchy descriptors
+  factorized OC/IC-II/BULK0 zero-manifold head
+  vectorized gauge-aware degenerate-cluster losses
+  ordered exactly-chiral energy decoder
+  v9-scale backbone, 140 epochs, lr=3e-5
+
+For paper ablations (final locked workflow):
+  python RUN_V12_ABLATIONS_FINAL_LOCKED.py --dry-run
+  python RUN_V12_ABLATIONS_FINAL_LOCKED.py
+  python summarize_v12_ablation_FINAL_LOCKED.py

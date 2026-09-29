@@ -1,0 +1,10 @@
+﻿branch,ref_dim,theoretical_capacity
+OC,24,nonzero
+ED-I,8,nonzero
+ED-II,8,nonzero
+IC-I,20,nonzero
+IC-II,20,nonzero
+IC-III,20,nonzero
+BULK-L,0,zero
+BULK-0,0,zero
+BULK-U,0,zero

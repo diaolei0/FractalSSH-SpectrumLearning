@@ -1,0 +1,41 @@
+{
+  "version": "v12-paper-operator-hierarchy-2026-09-13-r1",
+  "checkpoint": "best_projector_model.pt",
+  "checkpoint_epoch": 136,
+  "operator_mode": "full",
+  "projector_head_mode": "factorized",
+  "num_test_families": 83,
+  "num_test_states": 332988,
+  "state_weighted_energy": {
+    "MAE": 0.035659029565711674,
+    "RMSE": 0.05621549471402042,
+    "pooled_R2": 0.997694845157166,
+    "pred_chiral_maxerr": 0.0,
+    "total_monotonic_violations": 0
+  },
+  "primary_gauge_aware": {
+    "state_projector_MAE_nondeg_or_highpurity": 0.011963459109493446,
+    "state_zero_parentage_MAE_weighted_nondeg_or_highpurity": 0.11447872100710604,
+    "state_zero_mass_MAE_nondeg_or_highpurity": 0.0024574537868538616,
+    "degenerate_cluster_normalized_projector_trace_MAE": 0.01612873168233108,
+    "degenerate_cluster_zero_parentage_MAE": 0.10828051840449272,
+    "degenerate_cluster_zero_mass_MAE": 0.0028418629580295716,
+    "isolated6_macro_F1": 0.9962129596432949
+  },
+  "v9_comparable_state_weighted": {
+    "projector_score_MAE": 0.01720708714028772,
+    "zero_parentage_MAE_weighted": 0.11425068031478657,
+    "zero_mass_MAE": 0.003058910208656487,
+    "isolated6_macro_F1_PRIMARY_AUX": 0.9962129596432949
+  },
+  "family_mean_diagnostics": {
+    "projector_state_MAE": 0.012108806792746972,
+    "cluster_trace_MAE": 0.016227067632519323,
+    "zero_parentage_state_MAE": 0.12043259378511664,
+    "zero_cluster_parentage_MAE": 0.11360357611475197
+  },
+  "interpretation": {
+    "primary": "State-level supervision uses nondegenerate states plus high-purity degenerate states; mixed exact-degenerate clusters use aggregate gauge-invariant projector traces.",
+    "v9_comparable": "The v9_comparable_state_weighted block intentionally retains the original all-state v9 metric convention for direct baseline tables."
+  }
+}

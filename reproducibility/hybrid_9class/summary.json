@@ -1,0 +1,30 @@
+{
+  "version": "final-k3canonical-v12ai-9class-2026-09-13-r2",
+  "num_families": 83,
+  "runtime_seconds": 49.48602843284607,
+  "zero_decoder": "geometry-only H_eff^(3), deterministic parent-projector gauge canonicalization, exact geometry quotas",
+  "isolated_decoder": "v12 best_projector scores restricted to isolated six",
+  "leakage_policy": "true labels/projector scores are evaluation-only",
+  "num_states": 332988,
+  "hybrid9_accuracy": 0.9875070573113746,
+  "hybrid9_macro_f1": 0.9874186378508107,
+  "hybrid9_per_class_f1": {
+    "OC": 0.9554925693274092,
+    "ED-I": 0.9970989648579153,
+    "ED-II": 0.9970989648579153,
+    "IC-I": 0.9962207837513082,
+    "IC-II": 0.9803431714307848,
+    "IC-III": 0.9962207837513082,
+    "BULK-L": 0.9953191303206614,
+    "BULK-0": 0.9736542420393325,
+    "BULK-U": 0.9953191303206614
+  },
+  "zero3_accuracy": 0.9726107320551675,
+  "zero3_macro_f1": 0.969829994265842,
+  "zero3_per_class_f1": {
+    "OC": 0.9554925693274092,
+    "IC-II": 0.9803431714307848,
+    "BULK-0": 0.9736542420393325
+  },
+  "zero_membership_errors": 0
+}
